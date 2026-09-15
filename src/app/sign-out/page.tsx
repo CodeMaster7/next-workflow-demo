@@ -1,5 +1,4 @@
 import { auth } from '@/lib/auth'
-import { toNextJsHandler } from 'better-auth/next-js'
 import { headers } from 'next/headers'
 import Link from 'next/link'
 import { redirect } from 'next/navigation'

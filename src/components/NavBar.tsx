@@ -1,10 +1,10 @@
 'use client';
 
-import { useSession } from "better-auth/react";
+import { clientAuth } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 
 export function NavBar() {
-  const { data: session, isPending } = useSession();
+  const { data: session, isPending } = clientAuth.useSession();
   const router = useRouter();
 
   if (isPending) {
