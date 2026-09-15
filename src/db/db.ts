@@ -1,5 +1,6 @@
-import { drizzle } from 'drizzle-orm/neon-http'
-import { serverEnv } from '@/data/serverEnv'
-import { relations } from './relations'
+import { drizzle } from "drizzle-orm/node-postgres";
+import { Pool } from "pg";
+import { serverEnv } from "@/data/serverEnv";
 
-export const db = drizzle(serverEnv.DATABASE_URL, { relations })
+const pool = new Pool({ connectionString: serverEnv.DATABASE_URL });
+export const db = drizzle(pool);
