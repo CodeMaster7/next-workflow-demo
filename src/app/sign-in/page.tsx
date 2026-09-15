@@ -18,7 +18,7 @@ export default async function SignInPage() {
 				</h1>
 				<div className='mt-6'>
 					<Link
-						href='/api/auth/sign-in/github'
+						href='/api/auth/sign-in/social?provider=github'
 						className='flex items-center justify-center w-full bg-gray-900 text-white py-2 px-4 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-colors'>
 						<svg
 							className='w-5 h-5 mr-2'
